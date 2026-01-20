@@ -14,12 +14,16 @@
 '''
 
 import sys
+import  requests as rq
 
 if sys.argv[1]=="--userid":
 
     try:
         userid = sys.argv[2]
         print("grabbing information from user " , userid)
+
+
+
     except IndexError:
         print("Usage: python main.py --userid <userid>")
 
