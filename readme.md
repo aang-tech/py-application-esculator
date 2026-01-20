@@ -1,5 +1,6 @@
 # 🚀 The One-Click Escalator
 > **Internal Project Name:** `py-application-esculator`
+
 **Automated Diagnostic Data Collection for Application Support**
 
 ## 📖 The "Why"
