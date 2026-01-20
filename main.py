@@ -20,7 +20,22 @@ if sys.argv[1]=="--userid":
 
     try:
         userid = sys.argv[2]
-        print("grabbing information from user " , userid)
+
+        # read app's status (endpoint)
+        # check the current status of the application to make sure if the problem is app side
+        # or end user issue
+
+        appdata = rq.get("http://127.0.0.1:8000/api/health")
+        print(appdata.json()["status"])
+
+
+        # read app log
+        logdata = open(r"\\wsl.localhost\Ubuntu\home\\albert\coolmeapp\app-log.txt","r")
+        for line in logdata:
+            if "User "+userid in line:
+                print(line)
+
+        # read app's database
 
 
 
