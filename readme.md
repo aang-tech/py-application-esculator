@@ -57,7 +57,7 @@ python main.py --user-id <userid>
 ## Milestone
     [x] Setup files
     [x] Connect to endpoint
-    [ ] View Log
-    [ ] Connect to database
-    [ ] Create report
-    [ ] Send report to Slack with ticket info
+    [X] View Log
+    [X] Connect to database
+    [X] Create report
+    [X] Send report to Slack with ticket info
